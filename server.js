@@ -20,7 +20,7 @@ app.engine("handlebars", expressHandlebars({
 app.set("view engine", "handlebars");
 
 app.use(bodyParser.urlendcoded({
-  extended: false;
+  extended: false
 }));
 
 app.use(router);
