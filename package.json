@@ -18,9 +18,11 @@
   "homepage": "https://github.com/alyssaalbright5050/News-Scraper#readme",
   "dependencies": {
     "axios": "^0.19.2",
+    "body": "^5.1.0",
     "cheerio": "^1.0.0-rc.3",
     "express": "^4.17.1",
     "handlebars": "^4.7.3",
-    "mongoose": "^5.8.11"
+    "mongoose": "^5.8.11",
+    "parser": "^0.1.4"
   }
 }
