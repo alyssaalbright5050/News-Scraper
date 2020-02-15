@@ -12,16 +12,16 @@ var app = express();
 var router = express.Router();
 
 //Designate our public folder as a static directory
-app.use(express.static(__dirname * "/public"));
+app.use(express.static(__dirname + "/public"));
 
 app.engine("handlebars", expressHandlebars({
   defaultLayout: "main"
 }));
 app.set("view engine", "handlebars");
 
-app.use(bodyParser.urlendcoded({
-  extended: false
-}));
+// app.use(bodyParser.urlendcoded({
+//   extended: false
+// }));
 
 app.use(router);
 
