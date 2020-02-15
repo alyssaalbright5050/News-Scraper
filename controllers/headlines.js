@@ -4,8 +4,8 @@ var makeDate = require("../scripts/date");
 var Headline = require("../models/Headline");
 
 module.exports = {
-    fetch: function(cd) {
-        scrape(function(date) {
+    fetch: function(cb) {
+        scrape(function(data) {
             var articles = data;
             for (var i=0; i < articles.length; i++) {
                 articles[i].date = makeDate();
