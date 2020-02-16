@@ -25,6 +25,5 @@
     "handlebars": "^4.7.3",
     "mongoose": "^5.8.11",
     "request": "^2.79.0"
-    
   }
 }
