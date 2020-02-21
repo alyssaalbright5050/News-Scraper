@@ -13,14 +13,14 @@ module.exports = {
             }
 
             Headline.collection.insertMany(articles, {ordered:false}, function(err, docs){
-                cd(err, docs);
+                cb(err, docs);
             });
         })
     },
     delete: function(query, cb) {
         Headline.remove(query, cb);
     },
-    get: function(query, cd) {
+    get: function(query, cb) {
         Headline.find(query)
         .sort({
             _id: -1
