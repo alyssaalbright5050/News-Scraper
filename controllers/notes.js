@@ -8,7 +8,7 @@ module.exports = {
         }, cb);
     },
     save: function(data, cb) {
-        car newNote = {
+        var newNote = {
             _headlineId: data._id,
             date: makeDate(),
             noteText: data.noteText
