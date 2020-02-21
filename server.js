@@ -24,7 +24,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(router);
 
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/News-Scraper";
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/news-scraper-alyssa";
 
 
 mongoose.connect(MONGODB_URI);
