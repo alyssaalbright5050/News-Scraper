@@ -12,6 +12,7 @@ var scrape = function (cb) {
     $(".theme-summary").each(function(i, element) {
 
         var head = $(this).children(".story-heading").text().trim();
+        var url = $(this).children(".story-heading").children("a").attr("href")
         var sum = $(this).children("summary").text().trim();
 
         if(head && sum){
@@ -20,7 +21,8 @@ var scrape = function (cb) {
 
             var dataToAdd = {
                 headline: headNeat,
-                summary: sumNeat
+                summary: sumNeat,
+                url:url
             };
             articles.push(dateToAdd);
         }
