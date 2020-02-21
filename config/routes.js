@@ -1,3 +1,6 @@
+var headlinesController = require("../controllers/headlines");
+var notesController = require("../controllers/notes");
+
 module.exports = function(router) {
     router.get("/", function(req, res) {
         res.render("home");
@@ -37,7 +40,7 @@ module.exports = function(router) {
             res.json(data);
         });
     });
-    router.patch("/api/headlines", function(req, res) {
+    router.put("/api/headlines", function(req, res) {
         headlinesController.update(req.body, function(err, data) {
             res.json(data);
         });
