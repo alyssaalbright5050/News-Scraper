@@ -24,18 +24,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(router);
 
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/news-scraper-alyssa";
+var db = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
 
 
-mongoose.connect(MONGODB_URI);
-// mongoose.connect(db, function(error) {
-//   if(error){
-//     console.log(error);
-//   }
-//   else{
-//     console.log("mongoose connection is successful");
-//   }
-// });
+
+
 
 app.listen(PORT, function(){
   console.log("listening on port" + PORT);
